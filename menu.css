@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+
+/* #main {
+    position: relative;
+} */
+
+
+/* #main #header .icon {
+    list-style-type: none;
+    position: absolute;
+    left: 1600px;
+    top: 0;
+}
+
+#main #slider .icon .uer {
+    position: absolute;
+    right: 150px;
+    top: 45px;
+    font-size: 25px;
+    color: #333;
+}
+
+#main #slider .icon .cart {
+    position: absolute;
+    right: 110px;
+    top: 45px;
+    font-size: 25px;
+    color: #333;
+} */
+
+#slider .menu .nav {
+    background-color: #C0C0C0;
+    padding-left: 500px;
+    line-height: 30px;
+}
+
+#nav li a {
+    position: relative;
+}
+
+#slider .menu .nav>li>a {
+    text-transform: uppercase;
+}
+
+#slider .menu>ul {
+    list-style: none;
+    padding-left: 50px;
+}
+
+#slider .menu>ul>li {
+    display: inline-block;
+    padding-right: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#slider .menu>ul>li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+#slider .menu>ul>li:hover>a {
+    color: #fb252f;
+    font-weight: bold;
+}
+
+video {
+    width: 100vw;
+    height: 50vh;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai3 - Duc Trong</title>
+    <link rel="stylesheet" href="./assets/maytinh/index.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./img/fav-maytinh.png" type="image/x-icon">
+</head>
+
+<body onload="startTime()">
+    <div id="main">
+        <div id="header">
+
+            <div id="sup-number">
+                <ul>
+                    <li style="background-color:#C0C0C0;">
+
+                        <marquee>Hí anh em</marquee>
+                    </li>
+                </ul>
+                <hr style="height: 10px; background-color: #333;">
+                <a href="">
+                    <video playsinline autoplay muted loop>
+                        <source src="https://res.cloudinary.com/dn4nxz7f0/video/upload/v1594348575/Pexels_Videos_1093655_pr26ax.mp4" type="video/mp4">
+                        </video>
+                </a>
+                <!-- <ul class="icon">
+                    dágduhagdjgu
+                </ul> -->
+                <hr style=" height: 10px; background-color: #333;">
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="menu">
+                <ul class="nav">
+                    <li>
+                        <a href="">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </a>
+                        <a href="mainnn.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="albums-outline"></ion-icon>
+                        </a>
+                        <a href="./slide-show.html">slide-show<i class='bx bx-chevron-down'></i></a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                            </ion-icon>
+                        </a>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="card-outline"></ion-icon>
+                        </a>
+                        <a href="./banhang.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="calculator-outline"></ion-icon>
+                        </a>
+                        <a href="">Máy tính<i class='bx bx-chevron-down'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="header">
+            <div class="title">
+                <h3>GIẢI PHƯƠNG TRÌNH ax <sup>2</sup> +bx + c =0</h3>
+                <span>Số lần giải: <b id="solangiai"></b> </span>
+                <!-- <hr> -->
+            </div>
+            <hr>
+
+        </div>
+
+        <div id="content">
+            <div class="box-Pt">
+                <form>
+                    <p><label for="">Nhập số a: </label> <input type="text" id="a"></p>
+                    <p><label for="">Nhập số b: </label> <input type="text" id="b"></p>
+                    <p><label for="">Nhập số c: </label> <input type="text" id="c"></p>
+                </form>
+            </div>
+            <div class="ketQua">
+                <button type="button" class="nut-khoa" disabled id="Giai" onclick="PTbac2()">Giải PT</button>
+                <button type="button" class="nut" id="btnchoso" onclick="choSo()">Cho số</button>
+            </div>
+
+            <div id="box-g">
+            </div>
+
+        </div>
+
+
+
+        <div id="footer">
+            <p>Bây giờ là</p>
+            <div id="today">
+                <script>
+                    var d = new Date();
+
+                    document.write(d.getDate() + "/");
+                    document.write((d.getMonth() + 1) + "/");
+                    document.write(d.getFullYear());
+
+                    // const dateDay = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+                </script>
+            </div>
+            <div id="timer">
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/maytinh/index.js"></script>
+</body>
+<script>
+    function choSo() {
+        var a = Math.round(Math.random() * 10);
+        var b = Math.round(Math.random() * 10);
+        var c = Math.round(Math.random() * 10);
+        document.getElementById("a").value = a;
+        document.getElementById("b").value = b;
+        document.getElementById("c").value = c;
+        var giai = document.getElementById("Giai");
+        giai.disabled = false;
+        giai.className = 'nut';
+    }
+</script>
+
+</html>
